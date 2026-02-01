@@ -1,2 +1,4 @@
-# Linux-Customization-and-Tweaks
-A collection of Linux interface customizations, including wallpapers, window managers, launchers, themes, and various tweaks.
+# Personal Linux Configs
+
+A public repository of personal Linux configurations, tweaks, and setups.  
+Mostly for backup and reference; no installation instructions included.
