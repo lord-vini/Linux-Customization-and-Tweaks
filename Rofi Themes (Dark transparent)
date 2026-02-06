@@ -1,0 +1,79 @@
+#nano ~/.config/rofi/themes/mini-glass-overlay.rasi
+
+#script
+
+*******************************************************************************
+ * ROFI Theme - Mini Glass Dark Overlay
+ *******************************************************************************/
+
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+    font: "Inter 12";
+}
+
+* {
+    /* fundo base */
+    background-color:           #0f121288;
+    text-color:                 #d3d7cf;
+
+    /* seleção: dark overlay */
+    selbg:                      #000000aa;   /* preto translúcido */
+    actbg:                      #000000aa;
+    urgbg:                      #e53935;
+
+    winbg:                      #0f121288;
+
+    selected-normal-foreground: #ffffff;
+    normal-foreground:          @text-color;
+    selected-normal-background: @selbg;
+    normal-background:          @background-color;
+
+    separator-style: "none";
+}
+
+window {
+    background-color: @background-color;
+    border-radius: 16px;
+    width: 420px;
+    location: center;
+}
+
+mainbox {
+    orientation: vertical;
+}
+
+entry {
+    padding: 8px;
+    margin: 15px;
+    border: 0 0 1px;
+    border-color: #555;
+}
+
+listview {
+    padding: 5px 15px 15px 15px;
+    lines: 8;
+}
+
+element {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+element normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+
+element selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0 10px 0 0;
+}
+prompt {
+    enabled: false;
+} 
